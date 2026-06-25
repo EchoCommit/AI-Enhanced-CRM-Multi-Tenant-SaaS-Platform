@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# MacOS
+.DS_Store
+
+# Data files (Prevent Data Leakage)
+*.csv
+*.xlsx
+*.json
+*.sqlite
+*.db
+
+# Documentation / Internal Files (Do not expose PRDs, specs, or sensitive docs)
+*.pdf
+Nexus_CRM_PRD.pdf
+Nexus_CRM_SDD.pdf
+CRM_DataAnalyst_2025_2026.pdf
+
+# Trained Models (Too large / sensitive for GitHub)
+models/
+*.pkl
+*.joblib
+*.h5
+
+# OS generated files
+Thumbs.db
