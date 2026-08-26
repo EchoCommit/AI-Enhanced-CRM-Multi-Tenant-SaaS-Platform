@@ -1,2 +1,4 @@
-// UI primitives folder (Shadcn components will live here)
-export {};
+export * from "./avatar";
+export * from "./dropdown-menu";
+export * from "./dialog";
+export * from "./tooltip";
