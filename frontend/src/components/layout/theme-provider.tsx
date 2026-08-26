@@ -8,16 +8,15 @@ interface ThemeProviderProps {
 }
 
 /**
- * Placeholder ThemeProvider component.
- * Later, this will fetch per-tenant theme configuration from API / server context
- * and inject dynamic CSS custom properties into :root.
+ * ThemeProvider client component that fetches tenant theme config (mock static JSON object),
+ * injects it as CSS custom properties into :root, and caches it in localStorage.
  */
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const applyThemeToDom = useThemeStore((state) => state.applyThemeToDom);
+  const initTheme = useThemeStore((state) => state.initTheme);
 
   useEffect(() => {
-    applyThemeToDom();
-  }, [applyThemeToDom]);
+    initTheme();
+  }, [initTheme]);
 
   return <>{children}</>;
 }

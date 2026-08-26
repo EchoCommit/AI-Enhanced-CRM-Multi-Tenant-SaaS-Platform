@@ -19,15 +19,15 @@ const config: Config = {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        ring: "var(--ring)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         /* Custom Tenant Variables */
-        "tenant-primary": "hsl(var(--color-primary))",
-        "tenant-accent": "hsl(var(--color-accent))",
-        "tenant-background": "hsl(var(--color-background))",
+        "tenant-primary": "var(--color-primary)",
+        "tenant-accent": "var(--color-accent)",
+        "tenant-background": "var(--color-background)",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "var(--color-primary)",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -43,7 +43,7 @@ const config: Config = {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
+          DEFAULT: "var(--color-accent)",
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
@@ -54,6 +54,9 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        tenant: ["var(--font-tenant)", "var(--font-family)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
