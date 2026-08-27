@@ -32,6 +32,6 @@ models/
 *.pkl
 *.joblib
 *.h5
-
+*.generate_notebook.ipynb
 # OS generated files
 Thumbs.db
